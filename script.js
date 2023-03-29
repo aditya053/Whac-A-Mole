@@ -14,7 +14,7 @@ function rSquare(){
 
     })
 
-    let randomSquare= squares[Math.round(Math.random*9)];
+    let randomSquare= squares[Math.floor(Math.random()*9)];
     randomSquare.classList.add('mole');
 
     position=randomSquare.id;
