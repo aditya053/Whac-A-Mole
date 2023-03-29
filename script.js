@@ -4,11 +4,11 @@ const score=document.getElementById('score');
 const mole=document.querySelector('.mole');
 
 let result=0;
-let position
+let position;
 let currTime=60;
 let timerId=null;
 
-function randomSquare(){
+function rSquare(){
     squares.forEach(square=>{
         square.classList.remove('mole');
 
@@ -43,7 +43,7 @@ function countDown(){
     if(currTime==0){
         clearInterval(countDownTimerId);
         clearInterval(timerId);
-        alert('GAME OVER! Your final score is'+result);
+        alert('GAME OVER! Your final score is '+result);
     }
 
 }
